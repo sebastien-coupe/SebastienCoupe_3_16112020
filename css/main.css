@@ -9,6 +9,7 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -19,6 +20,10 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.title {
+  font-family: 'Shrikhand', cursive;
 }
 
 .container {
