@@ -1,0 +1,39 @@
+.hero {
+    background-color: map-get($colors, 'gray-200');
+    text-align: center;
+
+    &__info {
+        margin-right: -(map-get($gutters, 'sm'));
+        margin-left: -(map-get($gutters, 'sm'));
+        padding: 1.6rem 0;
+        background-color: map-get($colors, 'gray-400');
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: map-get($colors, 'gray-900');
+
+        .fas {
+            margin-right: 1.4rem;
+        }
+    }
+
+    &__body {
+        padding: 4rem 0 5.6rem;
+    }
+
+    &__title {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 2.4rem;
+    }
+
+    &__tagline {
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        color: map-get($colors, 'gray-900');
+    }
+
+    &__cta {
+        margin-top: 3rem;
+    }
+
+}

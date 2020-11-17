@@ -1,4 +1,4 @@
 .container {
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: map-get($gutters, 'sm');
+    padding-left: map-get($gutters, 'sm');
 }
