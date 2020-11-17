@@ -150,7 +150,7 @@ a {
 .instructions__step {
   position: relative;
   margin-top: 2rem;
-  padding-left: 1.2rem;
+  padding-left: 1.3rem;
   counter-increment: step;
 }
 
@@ -161,9 +161,9 @@ a {
   justify-content: center;
   position: absolute;
   left: 0;
-  top: calc(50% - 1.2rem);
-  width: 2.4rem;
-  height: 2.4rem;
+  top: calc(50% - 1.3rem);
+  width: 2.6rem;
+  height: 2.6rem;
   border-radius: 50%;
   background-color: #9356dc;
   font-size: 1.5rem;
