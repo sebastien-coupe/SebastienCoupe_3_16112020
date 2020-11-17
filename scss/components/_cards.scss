@@ -1,0 +1,25 @@
+.card {
+    position: relative;
+    @include shadow;
+
+    &--inline {
+        display: flex;
+        align-items: center;
+        padding: 2.6rem 2rem 2.6rem 2.6rem;
+        border-radius: 2rem;
+        background-color: map-get($colors, 'gray-200');
+    }
+
+    &__icon {
+        width: 3rem;
+        text-align: center;
+        font-size: 2rem;
+        color: map-get($colors, 'gray-700');
+    }
+
+    &__label {
+        margin-left: 2rem;
+        font-weight: 500;
+    }
+
+}

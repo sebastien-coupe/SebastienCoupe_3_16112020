@@ -14,14 +14,20 @@ body {
   font-weight: 300;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   font-size: 100%;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 a {
@@ -42,14 +48,39 @@ a {
   display: inline-block;
   padding: 1.6rem 2.4rem;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
-  box-shadow: 0 6px 8px 2px rgba(0, 0, 0, 0.15);
   color: white;
   font-size: 1.5rem;
   font-weight: 500;
+  box-shadow: 0 6px 8px 2px rgba(0, 0, 0, 0.15);
 }
 
 .btn--rounded {
   border-radius: 10rem;
+}
+
+.card {
+  position: relative;
+  box-shadow: 0 6px 8px 2px rgba(0, 0, 0, 0.15);
+}
+
+.card--inline {
+  display: flex;
+  align-items: center;
+  padding: 2.6rem 2rem 2.6rem 2.6rem;
+  border-radius: 2rem;
+  background-color: #f6f6f6;
+}
+
+.card__icon {
+  width: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #7d7d7d;
+}
+
+.card__label {
+  margin-left: 2rem;
+  font-weight: 500;
 }
 
 .header {
@@ -101,5 +132,42 @@ a {
 
 .hero__cta {
   margin-top: 3rem;
+}
+
+.instructions {
+  padding: 5rem 0 6.6rem;
+}
+
+.instructions__title {
+  font-size: 2.4rem;
+}
+
+.instructions__list {
+  margin-top: 3rem;
+  counter-reset: step;
+}
+
+.instructions__step {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 1.2rem;
+  counter-increment: step;
+}
+
+.instructions__step::after {
+  content: counter(step);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 1.2rem);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: #9356dc;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
