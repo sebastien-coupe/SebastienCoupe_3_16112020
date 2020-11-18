@@ -1,4 +1,14 @@
 .container {
-    padding-right: map-get($gutters, 'sm');
-    padding-left: map-get($gutters, 'sm');
+    padding-right: map-get($gutters, "sm");
+    padding-left: map-get($gutters, "sm");
+}
+
+.img--fluid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
 }

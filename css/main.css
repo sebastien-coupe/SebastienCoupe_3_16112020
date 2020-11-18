@@ -44,6 +44,16 @@ a {
   padding-left: 2rem;
 }
 
+.img--fluid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+}
+
 .btn {
   display: inline-block;
   padding: 1.6rem 2.4rem;
@@ -60,7 +70,13 @@ a {
 
 .card {
   position: relative;
+  overflow: hidden;
   box-shadow: 0 6px 8px 2px rgba(0, 0, 0, 0.15);
+}
+
+.card--default {
+  margin-top: 2rem;
+  border-radius: 1.6rem;
 }
 
 .card--inline {
@@ -69,6 +85,25 @@ a {
   padding: 2.6rem 2rem 2.6rem 2.6rem;
   border-radius: 2rem;
   background-color: #f6f6f6;
+}
+
+.card__image {
+  height: 0;
+  padding-top: 52.4%;
+  position: relative;
+}
+
+.card__title {
+  font-size: 1.8rem;
+}
+
+.card__body--inline {
+  display: flex;
+  padding: 1.8rem 1.4rem;
+}
+
+.card__infos {
+  flex: 1;
 }
 
 .card__icon {
@@ -81,6 +116,13 @@ a {
 .card__label {
   margin-left: 2rem;
   font-weight: 500;
+}
+
+.card__cta {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 2.2rem;
 }
 
 .header {
@@ -107,7 +149,7 @@ a {
   background-color: #e9e9e9;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #383838;
+  color: #353535;
 }
 
 .hero__info .fas {
@@ -127,7 +169,7 @@ a {
 .hero__tagline {
   margin-top: 1rem;
   font-size: 1.8rem;
-  color: #383838;
+  color: #353535;
 }
 
 .hero__cta {
@@ -169,5 +211,18 @@ a {
   font-size: 1.5rem;
   font-weight: 500;
   color: white;
+}
+
+.restaurants {
+  padding: 5.8rem 0 6.5rem;
+  background-color: #f6f6f6;
+}
+
+.restaurants__title {
+  font-size: 2.4rem;
+}
+
+.restaurants__grid {
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=main.css.map */
