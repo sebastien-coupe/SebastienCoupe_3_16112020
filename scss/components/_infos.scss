@@ -1,0 +1,12 @@
+.info {
+    padding: 1.6rem 0;
+    background-color: map-get($colors, "gray-400");
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: map-get($colors, "gray-900");
+
+    .fas {
+        margin-right: 1.4rem;
+    }
+}
