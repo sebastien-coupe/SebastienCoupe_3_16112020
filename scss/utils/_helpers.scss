@@ -12,3 +12,16 @@
     object-fit: cover;
     height: 100%;
 }
+
+.icon {
+
+    &--prefix {
+        display: inline-block;
+        width: 2rem;
+    }
+
+    &--xs {
+        font-size: 75%;
+    }
+
+}
