@@ -47,6 +47,18 @@ button {
   padding-left: 2rem;
 }
 
+.back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  font-size: 2.2rem;
+  color: #353535;
+}
+
 .img--fluid {
   position: absolute;
   top: 0;
@@ -80,12 +92,13 @@ button {
 
 .btn {
   display: inline-block;
+  min-width: 18rem;
   padding: 1.6rem 2.4rem;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   color: white;
   font-size: 1.5rem;
   font-weight: 500;
-  box-shadow: 0 6px 8px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.15);
 }
 
 .btn--rounded {
@@ -109,6 +122,20 @@ button {
   padding: 2.6rem 2rem 2.6rem 2.6rem;
   border-radius: 2rem;
   background-color: #f6f6f6;
+}
+
+.card--info {
+  display: flex;
+  margin-top: 1.6rem;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.15);
+}
+
+.card--info:hover .card__slider {
+  transform: translateX(0);
 }
 
 .card__image {
@@ -142,11 +169,51 @@ button {
   font-weight: 500;
 }
 
+.card__description {
+  flex: 1;
+}
+
+.card__description p {
+  margin-top: 0.6rem;
+  font-size: 1.5rem;
+}
+
 .card__cta {
   display: flex;
   align-items: center;
   padding: 0 1rem;
   font-size: 2.4rem;
+}
+
+.card__slider {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(6rem);
+  transition: transform 0.25s ease-in-out;
+  background: linear-gradient(90deg, transparent, white 2.4rem);
+}
+
+.card__price {
+  width: auto;
+  align-self: flex-end;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.4rem;
+  font-weight: 500;
+}
+
+.card__check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  font-size: 2rem;
+  background-color: #99e2d0;
+  color: white;
 }
 
 .info {
@@ -199,6 +266,23 @@ button {
   margin-top: 3rem;
 }
 
+.category {
+  margin-top: 3rem;
+}
+
+.category__title {
+  font-weight: 300;
+}
+
+.category__title::after {
+  content: "";
+  display: block;
+  width: 4ch;
+  height: 3px;
+  margin-top: 6px;
+  background-color: #99e2d0;
+}
+
 .instructions {
   padding: 5rem 0 6.6rem;
 }
@@ -234,6 +318,50 @@ button {
   font-size: 1.5rem;
   font-weight: 500;
   color: white;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+}
+
+.restaurant__image {
+  position: relative;
+  height: 0;
+  padding-top: 68%;
+  overflow: hidden;
+}
+
+.restaurant__body {
+  position: relative;
+  margin-right: -2rem;
+  margin-left: -2rem;
+  padding: 3rem 2rem 4rem;
+  border-radius: 4rem 4rem 0 0;
+  background-color: #f6f6f6;
+  transform: translateY(-4rem);
+}
+
+.restaurant__headline {
+  display: flex;
+  align-items: center;
+}
+
+.restaurant__title {
+  flex: 1;
+  font-family: 'Shrikhand', cursive;
+  font-size: 2.6rem;
+}
+
+.restaurant__like {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 2.4rem;
+}
+
+.restaurant__cta {
+  margin-top: 5rem;
+  text-align: center;
 }
 
 .restaurants {

@@ -1,7 +1,7 @@
 .card {
     position: relative;
     overflow: hidden;
-    @include shadow;
+    @include shadow-offset;
 
     &--default {
         margin-top: 2rem;
@@ -14,6 +14,20 @@
         padding: 2.6rem 2rem 2.6rem 2.6rem;
         border-radius: 2rem;
         background-color: map-get($colors, 'gray-200');
+    }
+
+    &--info {
+        display: flex;
+        margin-top: 1.6rem;
+        padding: 1rem;
+        border-radius: 1.2rem;
+        background-color: white;
+        cursor: pointer;
+        @include shadow;
+
+        &:hover .card__slider {
+            transform: translateX(0);
+        }
     }
 
     &__image {
@@ -51,11 +65,55 @@
         font-weight: 500;
     }
 
+    &__description {
+        flex: 1;
+
+        p {
+            margin-top: 0.6rem;
+            font-size: 1.5rem;
+        }
+    }
+
     &__cta {
         display: flex;
         align-items: center;
         padding: 0 1rem;
         font-size: 2.4rem;
+    }
+
+    &__slider {
+        display: flex;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateX(6rem);
+        transition: transform 0.25s ease-in-out;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            white 2.4rem
+        );
+    }
+
+    &__price {
+        width: auto;
+        align-self: flex-end;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2.4rem;
+        font-weight: 500;
+    }
+
+    &__check {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 6rem;
+        font-size: 2rem;
+        background-color: map-get($colors, 'accent');
+        color: white;
     }
 
 }

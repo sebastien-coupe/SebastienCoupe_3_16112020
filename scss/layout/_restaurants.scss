@@ -1,6 +1,49 @@
+.restaurant {
+    background-color: map-get($colors, 'gray-200');
+
+    &__image {
+        position: relative;
+        height: 0;
+        padding-top: 68%;
+        overflow: hidden;
+    }
+
+    &__body {
+        position: relative;
+        margin-right: -(map-get($gutters, "sm"));
+        margin-left: -(map-get($gutters, "sm"));
+        padding: 3rem 2rem 4rem;
+        border-radius: 4rem 4rem 0 0;
+        background-color: map-get($colors, "gray-200");
+        transform: translateY(-4rem);
+    }
+
+    &__headline {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        flex: 1;
+        @include customtitle(2.6);
+    }
+
+    &__like {
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        font-size: 2.4rem;
+    }
+
+    &__cta {
+        margin-top: 5rem;
+        text-align: center;
+    }
+}
+
 .restaurants {
     padding: 5.8rem 0 6.5rem;
-    background-color: map-get($colors, 'gray-200');
+    background-color: map-get($colors, "gray-200");
 
     &__title {
         font-size: 2.4rem;
