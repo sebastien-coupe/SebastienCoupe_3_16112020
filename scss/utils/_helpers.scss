@@ -1,4 +1,7 @@
 .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
     padding-right: map-get($gutters, "sm");
     padding-left: map-get($gutters, "sm");
 }
