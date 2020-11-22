@@ -10,10 +10,15 @@
     color: white;
     font-size: 1.5rem;
     font-weight: 500;
+    transition: box-shadow 0.2s linear;
 
     @include shadow;
 
     &--rounded {
         border-radius: 10rem;
+    }
+
+    &:hover {
+        @include shadow-over;
     }
 }

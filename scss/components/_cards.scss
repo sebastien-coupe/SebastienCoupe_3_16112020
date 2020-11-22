@@ -67,6 +67,7 @@
 
     &__description {
         flex: 1;
+        text-overflow: ellipsis;
 
         p {
             margin-top: 0.6rem;
