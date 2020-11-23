@@ -43,6 +43,10 @@ button {
   cursor: pointer;
 }
 
+picture {
+  display: block;
+}
+
 .container {
   width: 100%;
   max-width: 1180px;
@@ -424,6 +428,8 @@ button {
 
 .restaurant {
   background-color: #f6f6f6;
+  background-color: white;
+  margin-bottom: -4rem;
 }
 
 .restaurant__image {
@@ -433,11 +439,18 @@ button {
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .restaurant__image {
+    height: 45vh;
+    padding-top: unset;
+  }
+}
+
 .restaurant__body {
   position: relative;
   margin-right: -2rem;
   margin-left: -2rem;
-  padding: 3rem 2rem 4rem;
+  padding: 3rem 2rem 8rem;
   border-radius: 4rem 4rem 0 0;
   background-color: #f6f6f6;
   transform: translateY(-4rem);
