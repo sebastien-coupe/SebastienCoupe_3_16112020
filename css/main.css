@@ -94,6 +94,29 @@ button {
   border-width: 0;
 }
 
+.like {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.like .fas,
+.like .far {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.like .fas {
+  color: #9356dc;
+  opacity: 0;
+}
+
+.like:hover .fas {
+  opacity: 1;
+}
+
 /* MEDIA QUERIES */
 .btn {
   display: inline-block;

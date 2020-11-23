@@ -50,3 +50,29 @@
     white-space: nowrap;
     border-width: 0;
 }
+
+
+.like {
+    display: block;
+    position: relative;
+    width: 25px;;
+    height: 25px;
+
+    .fas,
+    .far {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .fas {
+        color: map-get($colors, 'primary');
+        opacity: 0;
+    }
+
+    &:hover {
+        .fas {
+            opacity: 1;
+        }
+    }
+}
