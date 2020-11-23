@@ -344,7 +344,7 @@ button {
 }
 
 .instructions__step {
-  max-width: 420px;
+  max-width: 360px;
   margin: 0 auto;
   position: relative;
   margin-top: 2rem;
@@ -438,7 +438,8 @@ button {
 @media screen and (min-width: 768px) {
   .restaurants__grid {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    column-gap: 3rem;
+    row-gap: 3rem;
   }
 }
 

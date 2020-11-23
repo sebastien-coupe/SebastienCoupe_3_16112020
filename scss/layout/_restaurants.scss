@@ -56,7 +56,8 @@
 
         @include md {
             grid-template-columns: repeat(2, 1fr);
-            column-gap: 2rem;
+            column-gap: 3rem;
+            row-gap: 3rem;
         }
     }
 }
