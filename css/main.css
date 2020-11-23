@@ -45,7 +45,7 @@ button {
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 1180px;
   margin: 0 auto;
   padding-right: 2rem;
   padding-left: 2rem;
@@ -123,6 +123,11 @@ button {
 
 .card--default {
   border-radius: 1.6rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card--default:hover {
+  transform: scale(0.98);
 }
 
 .card--inline {
@@ -267,6 +272,20 @@ button {
 
 .info .fas {
   margin-right: 1.4rem;
+}
+
+.label {
+  display: inline-block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  background-color: #99e2d0;
+  color: #217460;
+  font-size: 1.5rem;
+  font-weight: 500;
+  z-index: 200;
 }
 
 .header {

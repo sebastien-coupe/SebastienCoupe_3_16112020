@@ -1,0 +1,13 @@
+.label {
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    background-color: map-get($colors, 'accent');
+    color: darken(map-get($colors, 'accent'), 45%);
+    font-size: 1.5rem;
+    font-weight: 500;
+    z-index: 200;
+}
