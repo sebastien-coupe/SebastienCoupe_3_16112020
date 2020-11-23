@@ -16,6 +16,10 @@
     top: calc(50% - 1.5rem);
     font-size: 2.2rem;
     color: map-get($colors, 'gray-900');
+
+    &:hover {
+        color: map-get($colors, 'primary');
+    }
 }
 
 .img--fluid {
