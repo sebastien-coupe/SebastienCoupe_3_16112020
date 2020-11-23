@@ -18,6 +18,14 @@
             flex-direction: column;
             height: 100%;
         }
+
+        &:hover {
+            background-color: lighten(map-get($colors, 'primary'), 35%);
+
+            .card__icon {
+                color: map-get($colors, 'primary');
+            }
+        }
     }
 
     &--info {

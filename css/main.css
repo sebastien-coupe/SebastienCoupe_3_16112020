@@ -140,6 +140,14 @@ button {
   }
 }
 
+.card--inline:hover {
+  background-color: #f2eafb;
+}
+
+.card--inline:hover .card__icon {
+  color: #9356dc;
+}
+
 .card--info {
   display: flex;
   margin-top: 1.6rem;
