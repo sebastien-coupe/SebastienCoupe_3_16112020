@@ -187,7 +187,7 @@ picture {
 
 .card--info {
   display: flex;
-  margin-top: 1.6rem;
+  flex: 1;
   padding: 1rem;
   border-radius: 1.2rem;
   background-color: white;
@@ -371,7 +371,16 @@ picture {
 }
 
 .category {
+  max-width: 450px;
   margin-top: 3rem;
+  margin: 3rem auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .category {
+    max-width: unset;
+    margin-top: 5rem;
+  }
 }
 
 .category__title {
@@ -385,6 +394,25 @@ picture {
   height: 3px;
   margin-top: 6px;
   background-color: #99e2d0;
+}
+
+.category__list {
+  display: grid;
+  row-gap: 1.6rem;
+  margin-top: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .category__list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .category__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .instructions {
@@ -470,6 +498,12 @@ picture {
   transform: translateY(-4rem);
 }
 
+@media screen and (min-width: 768px) {
+  .restaurant__body {
+    padding-bottom: 10rem;
+  }
+}
+
 .restaurant__headline {
   display: flex;
   align-items: center;
@@ -491,6 +525,12 @@ picture {
 .restaurant__cta {
   margin-top: 5rem;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant__cta {
+    margin-top: 7.5rem;
+  }
 }
 
 .restaurants {

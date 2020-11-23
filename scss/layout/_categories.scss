@@ -1,5 +1,12 @@
 .category {
+    max-width: 450px;
     margin-top: 3rem;
+    margin: 3rem auto 0 auto;
+
+    @include md {
+        max-width: unset;
+        margin-top: 5rem;
+    }
 
     &__title {
         font-weight: 300;
@@ -11,6 +18,26 @@
             height: 3px;
             margin-top: 6px;
             background-color: map-get($colors, 'accent');
+        }
+    }
+
+    &__list {
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // gap: 1.6rem;
+        // margin-top: 1.6rem;
+        display: grid;
+        row-gap: 1.6rem;
+        margin-top: 1.6rem;
+
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1.6rem;
+        }
+
+        @include lg {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }
