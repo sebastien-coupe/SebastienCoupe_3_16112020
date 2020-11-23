@@ -50,6 +50,13 @@
     }
 
     &__grid {
+        display: grid;
+        row-gap: 2rem;
         margin-top: 3rem;
+
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2rem;
+        }
     }
 }

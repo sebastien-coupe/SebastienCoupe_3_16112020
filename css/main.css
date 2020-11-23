@@ -94,6 +94,7 @@ button {
   border-width: 0;
 }
 
+/* MEDIA QUERIES */
 .btn {
   display: inline-block;
   min-width: 18rem;
@@ -121,7 +122,6 @@ button {
 }
 
 .card--default {
-  margin-top: 2rem;
   border-radius: 1.6rem;
 }
 
@@ -131,6 +131,13 @@ button {
   padding: 2.6rem 2rem 2.6rem 2.6rem;
   border-radius: 2rem;
   background-color: #f6f6f6;
+}
+
+@media screen and (min-width: 768px) {
+  .card--inline {
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .card--info {
@@ -173,9 +180,23 @@ button {
   color: #7d7d7d;
 }
 
+@media screen and (min-width: 768px) {
+  .card__icon {
+    margin-bottom: 1.4rem;
+    font-size: 3rem;
+  }
+}
+
 .card__label {
   margin-left: 2rem;
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .card__label {
+    margin-left: unset;
+    text-align: center;
+  }
 }
 
 .card__description {
@@ -307,11 +328,27 @@ button {
   counter-reset: step;
 }
 
+@media screen and (min-width: 768px) {
+  .instructions__list {
+    display: flex;
+    gap: 3rem;
+  }
+}
+
 .instructions__step {
+  max-width: 420px;
+  margin: 0 auto;
   position: relative;
   margin-top: 2rem;
   padding-left: 1.3rem;
   counter-increment: step;
+}
+
+@media screen and (min-width: 768px) {
+  .instructions__step {
+    flex: 1;
+    margin: unset;
+  }
 }
 
 .instructions__step::after {
@@ -385,7 +422,16 @@ button {
 }
 
 .restaurants__grid {
+  display: grid;
+  row-gap: 2rem;
   margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants__grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
 }
 
 .footer {

@@ -8,13 +8,25 @@
     &__list {
         margin-top: 3rem;
         counter-reset: step;
+
+        @include md {
+            display: flex;
+            gap: 3rem;
+        }
     }
 
     &__step {
+        max-width: 420px;
+        margin: 0 auto;
         position: relative;
         margin-top: 2rem;
         padding-left: 1.3rem;
         counter-increment: step;
+
+        @include md {
+            flex: 1;
+            margin: unset;
+        }
 
         &::after {
             content: counter(step);

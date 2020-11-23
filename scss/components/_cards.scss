@@ -4,7 +4,6 @@
     @include shadow-offset;
 
     &--default {
-        margin-top: 2rem;
         border-radius: 1.6rem;
     }
 
@@ -14,6 +13,11 @@
         padding: 2.6rem 2rem 2.6rem 2.6rem;
         border-radius: 2rem;
         background-color: map-get($colors, 'gray-200');
+
+        @include md {
+            flex-direction: column;
+            height: 100%;
+        }
     }
 
     &--info {
@@ -58,11 +62,21 @@
         text-align: center;
         font-size: 2rem;
         color: map-get($colors, 'gray-700');
+
+        @include md {
+            margin-bottom: 1.4rem;
+            font-size: 3rem;
+        }
     }
 
     &__label {
         margin-left: 2rem;
         font-weight: 500;
+
+        @include md {
+            margin-left: unset;
+            text-align: center;
+        }
     }
 
     &__description {
