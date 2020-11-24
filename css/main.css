@@ -41,6 +41,7 @@ button {
   background: none;
   font: inherit;
   cursor: pointer;
+  outline: none;
 }
 
 picture {
