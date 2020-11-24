@@ -127,6 +127,13 @@ picture {
 }
 
 /* MEDIA QUERIES */
+@keyframes slide-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .btn {
   display: inline-block;
   min-width: 18rem;
@@ -375,6 +382,21 @@ picture {
   max-width: 450px;
   margin-top: 3rem;
   margin: 3rem auto 0 auto;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: slide-up 0.5s ease-in-out forwards;
+}
+
+.category:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.category:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.category:nth-child(4) {
+  animation-delay: 0.9s;
 }
 
 @media screen and (min-width: 768px) {
