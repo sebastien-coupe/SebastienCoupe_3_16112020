@@ -1,0 +1,10 @@
+.loader {
+    width: 100px;
+    height: 100px;
+    border: 15px solid transparent;
+    border-top-color: map-get($colors, 'primary');
+    border-bottom-color: map-get($colors, 'primary');
+    border-radius: 50%;
+    animation: rotate 1.2s linear;
+    animation-iteration-count: 3;
+}

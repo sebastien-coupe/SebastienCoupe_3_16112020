@@ -134,6 +134,53 @@ picture {
   }
 }
 
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 900;
+  pointer-events: none;
+  animation: fade-out 3s ease-out forwards;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border: 15px solid transparent;
+  border-top-color: #9356dc;
+  border-bottom-color: #9356dc;
+  border-radius: 50%;
+  animation: rotate 1.2s linear;
+  animation-iteration-count: 3;
+}
+
 .btn {
   display: inline-block;
   min-width: 18rem;
